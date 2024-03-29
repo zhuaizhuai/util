@@ -1,4 +1,4 @@
-package com.zhuai.localtcc.service;
+package com.zhuai.localtcc.example;
 
 import com.zhuai.localtcc.annotation.BizProcess;
 import com.zhuai.localtcc.handler.BizServiceHandler;
