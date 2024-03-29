@@ -1,6 +1,8 @@
-package com.zhuai.localtcc.example;
+package com.zhuai.bizrollback.example;
 
-import com.zhuai.localtcc.annotation.BizRollback;
+import com.zhuai.bizrollback.annotation.BizRollback;
+import com.zhuai.bizrollback.service.DiscountService;
+import com.zhuai.bizrollback.service.ItemStockService;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

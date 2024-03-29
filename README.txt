@@ -1,1 +1,1 @@
-1,localtcc一个本地的tcc实现工具
+1,bizrollback：一个简单的分布式业务执行-回滚工具类

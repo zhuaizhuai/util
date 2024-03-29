@@ -1,6 +1,6 @@
-package com.zhuai.localtcc.annotation;
+package com.zhuai.bizrollback.annotation;
 
-import com.zhuai.localtcc.handler.BizServiceHandler;
+import com.zhuai.bizrollback.handler.BizServiceHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class BizProcessAspect {
 
-    @Pointcut("@annotation(com.zhuai.localtcc.annotation.BizProcess)")
+    @Pointcut("@annotation(com.zhuai.bizrollback.annotation.BizProcess)")
     public void bizProcess() {
     }
 

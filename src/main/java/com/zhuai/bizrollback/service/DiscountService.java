@@ -1,7 +1,7 @@
-package com.zhuai.localtcc.example;
+package com.zhuai.bizrollback.service;
 
-import com.zhuai.localtcc.annotation.BizProcess;
-import com.zhuai.localtcc.handler.BizServiceHandler;
+import com.zhuai.bizrollback.annotation.BizProcess;
+import com.zhuai.bizrollback.handler.BizServiceHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

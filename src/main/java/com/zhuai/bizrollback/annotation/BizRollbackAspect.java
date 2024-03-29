@@ -1,6 +1,6 @@
-package com.zhuai.localtcc.annotation;
+package com.zhuai.bizrollback.annotation;
 
-import com.zhuai.localtcc.handler.BizServiceHandler;
+import com.zhuai.bizrollback.handler.BizServiceHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -21,7 +21,7 @@ import java.lang.reflect.Method;
 @Slf4j
 public class BizRollbackAspect {
 
-    @Pointcut("@annotation(com.zhuai.localtcc.annotation.BizRollback)")
+    @Pointcut("@annotation(com.zhuai.bizrollback.annotation.BizRollback)")
     public void rollback() {
     }
 
