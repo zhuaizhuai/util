@@ -19,10 +19,10 @@ import org.springframework.stereotype.Component;
 public class BizProcessAspect {
 
     @Pointcut("@annotation(com.zhuai.localtcc.annotation.BizProcess)")
-    public void rollback() {
+    public void bizProcess() {
     }
 
-    @Around("rollback()")
+    @Around("bizProcess()")
     public Object doAround(ProceedingJoinPoint joinPoint) throws Throwable {
         // 业务处理
         Object result = joinPoint.proceed();
