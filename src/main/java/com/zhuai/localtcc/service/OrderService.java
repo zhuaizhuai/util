@@ -16,19 +16,22 @@ public class OrderService {
     @Resource
     private DiscountService discountService;
 
-    // 使用方式
+    /**
+     * 使用举例
+     */
     @BizRollback
     public void creatOrder() {
         // 扣库存
         itemStockService.process();
         // 使用优惠券
         discountService.process();
+
         // 创建订单，如果异常需要回滚前两部的操作
         this.insert();
     }
 
     private void insert() {
-        System.out.println("insert order");
+        log.info("insert order");
         // 过程中发生异常了。。
         throw new RuntimeException("test");
     }

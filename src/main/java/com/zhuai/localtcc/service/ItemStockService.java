@@ -2,23 +2,25 @@ package com.zhuai.localtcc.service;
 
 import com.zhuai.localtcc.annotation.BizProcess;
 import com.zhuai.localtcc.handler.BizServiceHandler;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 @Service
+@Slf4j
 public class ItemStockService extends BizServiceHandler {
 
     @Override
     @BizProcess
     public void process() {
         // 扣库存
-        System.out.println("ItemStockService begin process");
+        log.info("ItemStockService begin process");
 
-        System.out.println("ItemStockService end process");
+        log.info("ItemStockService end process");
     }
 
     @Override
     public void rollback() {
         // 回滚库存
-        System.out.println("ItemStockService rollback");
+        log.info("ItemStockService rollback");
     }
 }
